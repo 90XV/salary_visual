@@ -12,3 +12,8 @@ Users then have to state how much they are willing to save either in the form of
 The app will then take these variables and output a graph (could be realtime). 
 
 The graph can show how long it will take to save up depening on the variables. eg: $10 000 before 15/06/2026 , monthly saving of $800 will take a XX months to save up to $25 000.
+
+## Development
+I don't really know what stack im going with here but I think I will start with the UI
+
+v0.01 (17/082025)
