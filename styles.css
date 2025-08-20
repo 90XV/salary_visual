@@ -1,4 +1,5 @@
 *{
+<<<<<<< Updated upstream
     margin:0;
     padding:0;
 }
@@ -82,3 +83,26 @@ body{
 .dropdown-content a:hover {background-color: #ddd;}
 /* Show the dropdown menu on hover */
 .droptog:hover .dropdown-content {display: block;}
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: solid red 6px;
+    min-height: 100vh;
+    display: flex;
+        flex-direction: column;
+}
+
+.container{
+    
+    background:linear-gradient(to bottom, red, blue);
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+}
+>>>>>>> Stashed changes
