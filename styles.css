@@ -1,4 +1,84 @@
-div .main-div{
-    flex:auto;
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    padding: 0.25rem;
+    display: flex;
     flex-direction: column;
 }
+
+.header{
+    border:none green 10px;
+}
+
+.header1{
+    text-align: center;
+    font-size:2rem;
+    border: solid black 6px;
+    border-radius: 0.75rem;
+}
+.hero-text-div{
+    padding:0.75rem;
+    margin:0rem;
+    border:solid black 6px;
+    border-radius: 0.75rem;
+}
+.main-form{
+    border:solid black 6px;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.options{
+    border: solid red 5px;
+}
+
+.selector {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    margin:0 0.5rem 0 0rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.75rem;
+}
+.input-fields{
+    background:rgb(179, 179, 179);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.75rem;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown{
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem 0 0 0;
+    border:solid blue 5px;
+    width:80%;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+/* Show the dropdown menu on hover */
+.droptog:hover .dropdown-content {display: block;}
