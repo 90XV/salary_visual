@@ -1,5 +1,4 @@
 *{
-<<<<<<< Updated upstream
     margin:0;
     padding:0;
 }
@@ -10,20 +9,34 @@ body{
     flex-direction: column;
 }
 
+body::before{
+    background-image: url('https://images.unsplash.com/photo-1755543041886-41944f3e08c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    content: "";
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .header{
-    border:none green 10px;
+    border:solid green 10px;
 }
 
 .header1{
     text-align: center;
     font-size:2rem;
-    border: solid black 6px;
+    border:none black 6px;
     border-radius: 0.75rem;
 }
 .hero-text-div{
     padding:0.75rem;
     margin:0rem;
-    border:solid black 6px;
+    border:none black 6px;
     border-radius: 0.75rem;
 }
 .main-form{
@@ -36,18 +49,28 @@ body{
 
 .options{
     border: solid red 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
 }
 
 .selector {
     background-color: #04AA6D;
     color: white;
     padding: 16px;
-    margin:0 0.5rem 0 0rem;
+    /*width: 8rem;*/
+    flex: 0 1 8rem;
+    max-width:100%;
+    /*margin:0 0.5rem 0 0rem;*/
     font-size: 16px;
     border: none;
     border-radius: 0.75rem;
 }
 .input-fields{
+    min-width: 50px;
+    /*max-width:320px;*/
+    width:90%;
     background:rgb(179, 179, 179);
     color: white;
     padding: 16px;
@@ -75,34 +98,18 @@ body{
     margin:0;
     display: flex;
     flex-direction: row;
-    padding: 0.75rem 0 0 0;
-    border:solid blue 5px;
-    width:80%;
+    gap:4px;
+    border:none blue 5px;
+    width:100%;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
 /* Show the dropdown menu on hover */
 .droptog:hover .dropdown-content {display: block;}
-=======
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    border: solid red 6px;
-    min-height: 100vh;
-    display: flex;
-        flex-direction: column;
-}
-
-.container{
-    
-    background:linear-gradient(to bottom, red, blue);
-}
 
 footer{
-    position: absolute;
+    text-align: center;
+    position: fixed;
+    width: 100%;
     bottom:0;
 }
->>>>>>> Stashed changes
