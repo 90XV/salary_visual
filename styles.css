@@ -22,9 +22,12 @@ body::before{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.big-div{
+
+}
 
 .header{
-    border:solid green 10px;
+    border:none green 10px;
 }
 
 .header1{
@@ -40,7 +43,7 @@ body::before{
     border-radius: 0.75rem;
 }
 .main-form{
-    border:solid black 6px;
+    border:none black 6px;
     border-radius: 0.75rem;
     padding: 0.75rem;
     display: flex;
@@ -48,7 +51,8 @@ body::before{
 }
 
 .options{
-    border: solid red 5px;
+    margin-top:8px;
+    border: none red 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -112,4 +116,10 @@ footer{
     position: fixed;
     width: 100%;
     bottom:0;
+}
+
+@media screen and (max-width: 650px) {
+    .options{
+        flex-direction: column;
+    }
 }

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="./styles.css">
-    <script src="scripts.js"></script>
+    <script src="./scripts.js"></script>
 </head>
 <body>
+    <div class="big-div">
     <div class="header">
         <h1 class="header1">Salary visual (v0.01)</h1>
         <div class="hero-text-div">
@@ -18,17 +19,17 @@
                 <div class="droptog">
                     <button id="selectfield-1" class="selector">Pick a field</button>
                         <div class="dropdown-content">
-                        <a>Deadline</a>
-                        <a>Salary</a>
-                        <a>Monthly Savings ($/%)</a>
-                        <a>Goal amount</a>
+                        <a id="deadline" onclick="selectQuery(this)">Deadline</a>
+                        <a id="salary" onclick="selectQuery(this)">Salary</a>
+                        <a id="savings" onclick="selectQuery(this)">Monthly Savings ($/%)</a>
+                        <a id="goal" onclick="selectQuery(this)">Goal amount</a>
                         </div> 
                 </div>
                 <input id="input1" class="input-fields" placeholder="null">
             </div>
             <div class="dropdown">
                 <div class="droptog">
-                    <button id="selectfield-1" class="selector">Pick a field</button>
+                    <button id="selectfield-2" class="selector">Pick a field</button>
                         <div class="dropdown-content">
                         <a>Deadline</a>
                         <a>Salary</a>
@@ -40,7 +41,7 @@
             </div>
             <div class="dropdown">
                 <div class="droptog">
-                    <button id="selectfield-1" class="selector">Pick a field</button>
+                    <button id="selectfield-3" class="selector">Pick a field</button>
                         <div class="dropdown-content">
                         <a>Deadline</a>
                         <a>Salary</a>
@@ -52,7 +53,7 @@
             </div>
             <div class="dropdown">
                 <div class="droptog">
-                    <button id="selectfield-1" class="selector">Pick a field</button>
+                    <button id="selectfield-4" class="selector">Pick a field</button>
                         <div class="dropdown-content">
                         <a>Deadline</a>
                         <a>Salary</a>
@@ -64,7 +65,6 @@
             </div>
             </div>
     </div>
-
 </div>
 <footer>adham.forum</footer>
 </body>
